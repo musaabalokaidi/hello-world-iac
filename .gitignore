@@ -1,0 +1,12 @@
+# Terraform temp folder
+.terraform
+
+# Terraform temp plan output
+tf.plan
+*.tfstate
+
+# Temp MacOS file
+.DS_Store
+
+# direnv
+.envrc

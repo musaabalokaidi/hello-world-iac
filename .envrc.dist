@@ -1,0 +1,2 @@
+export TF_VAR_env=
+export AWS_REGION=

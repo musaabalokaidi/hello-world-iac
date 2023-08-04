@@ -1,0 +1,9 @@
+{
+    "aws_region": "eu-west-2",
+    "env": "nonprod",
+    "ecr": [
+        "hello-world/dev",
+        "hello-world/uat",
+        "hello-world/prod"
+    ]
+}
