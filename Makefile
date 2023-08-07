@@ -5,7 +5,8 @@ init:
 	@terraform init \
 	-backend-config="bucket=hello-world-tf-state-${TF_VAR_env}" \
 	-backend-config="key=hello-world-iac" \
-	-backend-config="region=${AWS_REGION}" 
+	-backend-config="region=${AWS_REGION}"
+	-backend-config="dynamodb_table=terraform-remote-state-lock"
 
 remove-local-state:
 	@rm -f .terraform/terraform.tfstate
